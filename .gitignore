@@ -1,0 +1,26 @@
+# Editors / temp
+*.swp
+*.swo
+*~
+.*.svx
+.*.svz
+
+# Python
+__pycache__/
+*.pyc
+
+# Build
+build/
+*.o
+*.so
+*.a
+*.log
+
+# HPC
+offload_data/
+*.out
+*.err
+
+# Jupyter
+.ipynb_checkpoints/
+
