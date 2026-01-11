@@ -100,8 +100,6 @@ static std::mutex _LogMutex;
       _Timers[#name].call_count += 1; }
 
 
-
-
 namespace qsim {
 
 /**
@@ -1069,6 +1067,8 @@ inline size_t GetOwnerNode(size_t subset_id, size_t total_nodes) {
 }
 
 
+
+
 void ApplyGate_(const std::vector<unsigned>& qs, const fp_type* matrix, State& state) {
     using namespace std::chrono;
     auto start_time = high_resolution_clock::now();
@@ -1524,7 +1524,6 @@ void parameterConf_L(unsigned num_qubits, unsigned num_effective_qs, int gpuID,
 
     if (blocks < 1ULL) blocks = 1ULL;
 }
-
 
 
 template <unsigned G>

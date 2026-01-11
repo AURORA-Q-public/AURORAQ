@@ -324,7 +324,7 @@ static std::vector<Vector> CreateMultiGPU(unsigned num_qubits, int num_gpus) {
 
 
 static uint64_t MinSize(unsigned num_qubits) {
-    num_qubits = 43;  
+    num_qubits = 38;  
     uint64_t result = std::max(uint64_t{64}, 2 * (uint64_t{1} << num_qubits));
     return result;
 }
